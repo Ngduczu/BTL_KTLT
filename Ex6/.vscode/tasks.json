@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build C Project",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "main.c",
+          "body.c",
+          "-o",
+          "Ex6_program.exe"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+  
