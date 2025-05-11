@@ -1,0 +1,9 @@
+4
+Nguyen Duc Vu
+8.5 7.0 6.5
+Tran Quang Truong
+9.0 8.0 7.5
+Le Anh Quan
+6.5 7.5 8.0
+Pham The Vu
+7.0 6.0 6.5

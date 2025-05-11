@@ -93,14 +93,13 @@ void xuatFileVanBan(ThiSinh* head, const char* filename) {
     
     fprintf(file, "%-30s %-10s %-10s %-10s\n", "Ho ten", "Toan", "Ly", "Hoa");
     fprintf(file, "------------------------------------------------------------\n");
-    
+   
     ThiSinh* current = head;
     while (current != NULL) {
         fprintf(file, "%-30s %-10.2f %-10.2f %-10.2f\n", 
                 current->Hoten, current->Toan, current->Ly, current->Hoa);
         current = current->Next;
-    }
-    
+    }  
     fclose(file);
 }
 
@@ -109,12 +108,13 @@ void nhapTuFileNhiPhan(ThiSinh** head, const char* filename) {
     if (file == NULL) {
         return;
     }
-    
+    int n, i;
     ThiSinh ts;
-    while (fread(&ts, sizeof(ThiSinh), 1, file) == 1) {
+    fread(&n, sizeof(int), 1, file);
+    for (i = 0; i < n; ++i) {
+        fread(&ts, sizeof(ThiSinh), 1, file);
         boSungCuoi(head, ts.Hoten, ts.Toan, ts.Ly, ts.Hoa);
     }
-    
     fclose(file);
 }
 
@@ -123,20 +123,23 @@ void nhapTuFileVanBan(ThiSinh** head, const char* filename) {
     if (file == NULL) {
         return;
     }
-    
-    char buffer[100];
-    fgets(buffer, 100, file);
-    fgets(buffer, 100, file);
-    
+    int n;
+    fscanf(file, "%d", &n);
+	fgetc(file);
     char hoten[50];
     float toan, ly, hoa;
-    
-    while (fscanf(file, "%49s %f %f %f", hoten, &toan, &ly, &hoa) == 4) {
+	int i;
+    for (i = 0; i < n; ++i) {
+    	fgets(hoten, 50, file);
+    	hoten[strcspn(hoten, "\n")] = '\0';
+        fscanf(file, "%f %f %f", &toan, &ly, &hoa);
+        fgetc(file);
         boSungCuoi(head, hoten, toan, ly, hoa);
     }
-    
     fclose(file);
 }
+
+
 
 void timToanCaoNhat(ThiSinh* head) {
     if (head == NULL) {
