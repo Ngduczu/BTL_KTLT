@@ -1,3 +1,5 @@
+#include "main_1F.c"
+#include "main_2F.c"
 #include "main_3F.c"
 #include "main_4F.c"
 #include "main_5F.c"
@@ -19,25 +21,35 @@ int main(){
 	
 	switch(cmd){
 		case 1:
+			system("cls");
+			main_1F();
 			break;
 		case 2:
+			system("cls");
+			main_2F();
 			break;
 		case 3:
+			system("cls");
 			main_3F();
 			break;
 		case 4:
+			system("cls");
 			main_4F();
 			break;
 		case 5:
+			system("cls");
 			main_5F();
 			break;
 		case 6:
+			system("cls");
 			main_6F();
 			break;
 		case 7:
+			system("cls");
 			main_7F();
 			break;
 		case 8:
+			system("cls");
 			main_8F();
 			break;
 		case 0:

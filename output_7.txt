@@ -1,0 +1,41 @@
+Danh sach thong tin cua nhan vien:
+MNV: 320
+Ho ten: Nguyen kdi Phong: B
+Luong: 34232352
+MNV: 122
+Ho ten: Nguyen dkle Phong: A
+Luong: 32323432
+MNV: 321
+Ho ten: Ngk kewj Phong: A
+Luong: 325902352
+MNV: 112
+Ho ten: Nrfhu kewjk Phong: C
+Luong: 34349032
+MNV: 322
+Ho ten: Nkido kwel Phong: B
+Luong: 349058423
+MNV: 232
+Ho ten: KNufo kwel Phong: D
+Luong: 90348954
+MNV: 222
+Ho ten: Okd nekw Phong: C
+Luong: 3223434
+MNV: 200
+Ho ten: Koi wke Phong: B
+Luong: 9834532
+MNV: 231
+Ho ten: Kop kewj Phong: A
+Luong: 8238934
+MNV: 111
+Ho ten: Kjpoif kwel Phong: B
+Luong: 892389954
+
+Danh sach nhan vien co luong cao nhat:
+MNV: 111
+Ho ten: Kjpoif kwel Phong: B
+Luong: 892389954
+
+So luong nhan vien o phong A: 3
+So luong nhan vien o phong B: 4
+So luong nhan vien o phong C: 2
+So luong nhan vien o phong D: 1
